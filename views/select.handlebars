@@ -1,0 +1,30 @@
+
+<table>
+    <tr>
+        <td>Ações</td>
+        <td></td>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Civil</td>
+        <td>CPF</td>
+        <td>Cidade</td>
+        <td>Estado</td>
+    </tr>
+    {{#data}}
+    <tr>
+          <td>
+            <a href='update/{{id}}'><span class='glyphicon glyphicon-pencil'></span></a>
+
+            <a href='deletar/{{id}}' class='deletar'><span class='glyphicon glyphicon-remove'></span></a>
+          </td>
+          <td></td>
+          <td>{{nome}}</td>
+          <td>{{idade}}</td>
+          <td>{{civil}}</td>
+          <td>{{cpf}}</td>
+          <td>{{cidade}}</td>
+          <td>{{estado}}</td>
+    </tr>
+    {{/data}}
+
+</table>
